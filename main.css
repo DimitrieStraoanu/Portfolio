@@ -179,3 +179,16 @@ img{
     padding-left: 65px;
     padding-right: 10px;
 }
+
+@media (min-width:900px){
+    .closeBtn{
+        display:none;
+    }
+    .menu{
+        width: 350px;
+    }
+    .content{
+        padding-left: 400px;
+        max-width:800px;
+    }
+}
