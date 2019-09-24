@@ -8,7 +8,7 @@ p {
     font-size: 16px;
 }
 
-img{
+img {
     display: block;
 }
 
@@ -43,14 +43,13 @@ img{
     line-height: 150%;
 }
 
-#links a{
+#links a {
     display: block;
 }
 
 #about {
     display: flex;
     color: white;
-    height: 100vh;
     background: linear-gradient(11deg, #DFA100 68%, #FFFFFF 120%);
 }
 
@@ -64,6 +63,11 @@ img{
     margin-top: 8px;
     font-size: 24px;
 }
+
+#about p:last-of-type {
+    margin-bottom: 64px;
+}
+
 
 #work {
     color: #505050;
@@ -92,7 +96,7 @@ img{
 
 }
 
-#resume{
+#resume {
     color: #505050;
 }
 
@@ -110,7 +114,7 @@ img{
 
 }
 
-#contact{
+#contact {
     color: #505050;
     height: 100vh;
 }
@@ -122,13 +126,13 @@ img{
     font-weight: 400;
 }
 
-#contact p{
-    margin-bottom:16px;
+#contact p {
+    margin-bottom: 16px;
 }
 
-#contact a{
-    display:block;
-    margin-bottom:16px;
+#contact a {
+    display: block;
+    margin-bottom: 16px;
 }
 
 .link {
@@ -166,7 +170,7 @@ img{
 }
 
 .photo {
-    background: url('./images/mug_shot.jpg') center;
+    background: url('./assets/images/mug_shot.jpg') center;
     background-size: cover;
     border: 2px solid white;
     border-radius: 50%;
@@ -179,33 +183,48 @@ img{
     padding-left: 65px;
     padding-right: 10px;
 }
+.margin-top-small{
+    margin-top:16px;
+}
 
-@media (min-width:900px){
-    .closeBtn{
-        display:none;
+@media (min-width:950px) and (orientation: landscape) {
+    #about {
+        height: 100vh;
     }
-    .menu{
-        width: 350px;
-    }
-    .content{
-        padding-left: 400px;
-        padding-right: 50px;
-        max-width:800px;
+}
+@media (min-width:650px) and (orientation: portrait) {
+    #about {
+        height: 100vh;
     }
 }
 
-@media (orientation: landscape) and (max-width:899px){
-    .content{
-        padding-top:24px;
+@media (min-width:960px) {
+    .closeBtn {
+        display: none;
     }
-    #about{
-        height: auto;
+
+    .menu {
+        width: 350px;
     }
-    #about h1{
-        margin-bottom:10px;
-        margin-top:10px;
+
+    .content {
+        padding-left: 400px;
+        padding-right: 50px;
+        max-width: 800px;
     }
-    #about p:last-of-type{
-        margin-bottom: 32px;
+}
+
+@media (orientation: landscape) and (max-width:959px) {
+    .content {
+        padding-top: 24px;
+    }
+
+    #about h1 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #links {
+        margin-top: 100px;
     }
 }
