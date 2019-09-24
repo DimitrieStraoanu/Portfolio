@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+img{
+    display: block;
+}
+
+.menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: white;
+    color: #505050;
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    transition: width 0.5s ease-in-out;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+#links {
+    font-size: 24px;
+    margin-top: 150px;
+    margin-right: 55px;
+    line-height: 150%;
+}
+
+#links a{
+    display: block;
+}
+
+#about {
+    display: flex;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(11deg, #DFA100 68%, #FFFFFF 120%);
+}
+
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 30px;
+}
+
+#about p:first-of-type {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+#work {
+    color: #505050;
+}
+
+#work h1 {
+    color: #DFA100;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#work h2 {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 60px;
+    position: relative;
+    color: #DFA100;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#work img {
+    max-width: 100%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+}
+
+#resume{
+    color: #505050;
+}
+
+#resume h1 {
+    margin-bottom: 32px;
+    color: #DFA100;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#resume img {
+    max-width: 100%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+}
+
+#contact{
+    color: #505050;
+    height: 100vh;
+}
+
+#contact h1 {
+    margin-bottom: 32px;
+    color: #DFA100;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#contact p{
+    margin-bottom:16px;
+}
+
+#contact a{
+    display:block;
+    margin-bottom:16px;
+}
+
+.link {
+    margin-bottom: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.selected::before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 6px;
+    left: -16px;
+    top: 0;
+    background: #DFA100;
+}
+
+.marked::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 6px;
+    left: -16px;
+    top: -5px;
+    background: #DFA100;
+}
+
+.closed {
+    width: 53px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.photo {
+    background: url('./images/mug_shot.jpg') center;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.content {
+    padding-top: 100px;
+    padding-left: 65px;
+    padding-right: 10px;
+}
