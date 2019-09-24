@@ -192,3 +192,13 @@ img{
         max-width:800px;
     }
 }
+
+@media (orientation: landscape){
+    .content{
+        padding-top:24px;
+    }
+    #about h1{
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+}
