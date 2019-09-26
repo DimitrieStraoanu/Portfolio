@@ -12,6 +12,15 @@ img {
     display: block;
 }
 
+a {
+  text-decoration: none;
+  color: #505050;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .menu {
     position: fixed;
     z-index: 1000;
@@ -41,10 +50,6 @@ img {
     margin-top: 150px;
     margin-right: 55px;
     line-height: 150%;
-}
-
-#links a {
-    display: block;
 }
 
 #about {
@@ -205,6 +210,10 @@ img {
 
     .menu {
         width: 350px;
+    }
+
+    #about h1 {
+        font-size: 42px;
     }
 
     .content {
