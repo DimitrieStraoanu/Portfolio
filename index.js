@@ -24,8 +24,6 @@ function checkPosition(){
     else if(window.pageYOffset>=aboutHeight && window.pageYOffset<aboutHeight+workHeight-1) selectLink('Work');
     else if(window.pageYOffset>=aboutHeight+workHeight && window.pageYOffset<aboutHeight+workHeight+resumeHeight-1) selectLink('Resume');
     else if(window.pageYOffset>=aboutHeight+workHeight+resumeHeight && window.pageYOffset<aboutHeight+workHeight+resumeHeight+contactHeight-1) selectLink('Contact');
-    console.log(window.pageYOffset);
-    console.log(aboutHeight);
 }
 
 function selectLink(linkName){

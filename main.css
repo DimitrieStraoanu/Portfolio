@@ -198,7 +198,7 @@ a:hover{
     margin-bottom:16px;
 }
 
-@media (min-width:950px) and (orientation: landscape) {
+@media (min-width:1600px) and (orientation: landscape) {
     #about {
         height: 100vh;
     }
