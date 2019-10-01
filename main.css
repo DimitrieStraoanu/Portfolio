@@ -60,7 +60,7 @@ a:hover{
 
 #about h1 {
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     font-size: 30px;
 }
 
@@ -139,6 +139,9 @@ a:hover{
     display: block;
     margin-bottom: 16px;
 }
+.medium-scale{
+    font-size: 150%;
+}
 
 .link {
     margin-bottom: 16px;
@@ -190,6 +193,9 @@ a:hover{
 }
 .margin-top-small{
     margin-top:16px;
+}
+.margin-bottom-small{
+    margin-bottom:16px;
 }
 
 @media (min-width:950px) and (orientation: landscape) {
