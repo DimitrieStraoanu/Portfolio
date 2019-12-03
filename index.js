@@ -13,6 +13,7 @@ function toggleMenu() {
 
 function linkClicked() {    
     location.href = '#' + this.innerHTML.toLowerCase();
+    toggleMenu();
 }
 
 function checkPosition(){
